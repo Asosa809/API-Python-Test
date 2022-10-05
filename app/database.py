@@ -21,22 +21,3 @@ def get_db():
         yield db
     finally:
         db.close()
-
-
-# while True:
-
-#     try:
-#         conn = psycopg2.connect(
-#             host="localhost",
-#             database="officepythontest",
-#             user="postgres",
-#             password="19Angel98!",
-#             cursor_factory=RealDictCursor,
-#         )
-#         cursor = conn.cursor()
-#         print("Database Connected!")
-#         break
-#     except Exception as error:
-#         print("Connection failed")
-#         print("Error: ", error)
-#         time.sleep(2)
